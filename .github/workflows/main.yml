@@ -1,8 +1,12 @@
-name: Build
 
-on:
-  push:
-    branches: [ master ]
+name: Build Starting..
+
+on: 
+  #releasepush:
+    #pushbuild
+
+  watch: 
+      types: [started]
 
 jobs:
   build:
